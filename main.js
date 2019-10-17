@@ -48,7 +48,5 @@ function randomBackColor() {
     // (background color of cards) = backgroundColor;
   };
 
-
-
 //Iteration 5
 // When a user clicks the card, it will randomly select a new background color for the card
