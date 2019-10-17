@@ -34,7 +34,8 @@ input[type = "text"] {
 	border: 1px solid #ebebeb;
 }
 
-input[type = "submit"] {
+input[type = "submit"],
+ul {
 	width: 175px;
 	height: 40px;
 	font-size: 20px;
@@ -60,4 +61,16 @@ textarea {
 
 section {
 	margin: auto;
+}
+
+.card-input::placeholder {
+  color: black;
+}
+
+.card-input {
+  background-color: #ed6fe5;
+}
+
+ul {
+  list-style-type: none;
 }

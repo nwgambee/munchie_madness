@@ -14,9 +14,9 @@ function mainEventHandler(event) {
         event.preventDefault();
     }
     if (event.target.className === 'delete') {
-          event.target.parentNode.remove();
+        event.target.parentNode.remove();
     }
-    if (event.target.className === '') {
+    if (event.target.className === 'card-snack-name') {
 
     }
   };
@@ -24,7 +24,7 @@ function mainEventHandler(event) {
 function addNewCard(snackNameParam, snackDescParam) {
     var groceryList = document.querySelector('.grocery-list');
     var newCard = document.createElement('DIV');
-    newCard.innerHTML = `<ul><li> ${snackNameParam.value}: ${snackDescParam.value} </li></ul><button class="delete">Delete Snack</button>`;
+    newCard.innerHTML = `<ul><li class='card-snack-name'> <input class="card-input" type="text" placeholder="${snackNameParam.value}"><input class="card-input" type="text" placeholder="${snackDescParam.value}"></li></ul><button class="delete">Delete Snack</button>`;
     groceryList.appendChild(newCard);
 }
 
